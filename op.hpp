@@ -8,7 +8,7 @@ class Op : public Base {
         Op(double inp) : Base() {value = inp; }
         virtual double evaluate() { return value; }
         virtual std::string stringify() { return std::to_string(value); }
-	private:
+    private:
 	double value;
 };
 
