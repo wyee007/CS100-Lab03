@@ -5,9 +5,11 @@
 
 class Op : public Base {
     public:
-        Op(double value) : Base() { }
-        virtual double evaluate() { return 0.0; }
-        virtual std::string stringify() { return ""; }
+        Op(double inp) : Base() {value = inp; }
+        virtual double evaluate() { return value; }
+        virtual std::string stringify() { return std::to_string(value); }
+    private:
+	double value;
 };
 
 #endif //__OP_HPP__
