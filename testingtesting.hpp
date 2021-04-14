@@ -24,6 +24,6 @@ TEST(OPTEST2, Subtraction){
 TEST(OPTEST2, Power){
 	Base* eight = new Op(8);
 	Base* ten = new Op(10);
-	Base* test = new Pow(8, 10);
+	Base* test = new Pow(eight, ten);
 	EXPECT_EQ(test->evaluate(), 1073741824);
 }
