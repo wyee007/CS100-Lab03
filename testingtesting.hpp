@@ -20,6 +20,12 @@ TEST(OPTEST2, Subtraction){
 	Base* test = new Sub(eight, ten);
 	EXPECT_EQ(test->evaluate(), -2);
 }
+TEST(OPTEST2, Subtraction2){
+	Base* eight = new Op(8);
+	Base* ten = new Op(10);
+	Base* test = new Sub(ten, eight);
+	EXPECT_EQ(test->evaluate(), 2);
+}
 
 TEST(OPTEST2, Power){
 	Base* eight = new Op(8);
@@ -27,4 +33,13 @@ TEST(OPTEST2, Power){
 	Base* test = new Pow(eight, ten);
 	EXPECT_EQ(test->evaluate(), 1073741824);
 }
+<<<<<<< HEAD
 #endif //__TESTINGTESTING_HPP___
+=======
+TEST(OPTEST2, Power2){
+	Base* eight = new Op(8);
+	Base* one = new Op(1);
+	Base* test = new Pow(eight, one);
+	EXPECT_EQ(test->evaluate(), 1);
+}
+>>>>>>> fa8a63536e55d8834b99bd48465c43abbefd13f0
