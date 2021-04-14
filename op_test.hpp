@@ -16,10 +16,10 @@ TEST(OpTest, OpStringifyNonZero){
 }
 TEST(OpTest, OpStringifyZero){
    Op* test = new Op(0);
-   EXPECT_EQ(test->stringify(), "0");
+   EXPECT_EQ(test->stringify(), "0.000000");
 }
 TEST(OpTest, OpStringifyNegative){
    Op* test = new Op(-1);
-   EXPECT_EQ(test->stringify(), "-1");
+   EXPECT_EQ(test->stringify(), "-1.000000");
 }
 #endif //__OP_TEST_HPP__
