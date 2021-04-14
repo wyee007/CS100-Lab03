@@ -42,4 +42,3 @@ TEST(OPTEST2, Power2){
 
 #endif //__TESTINGTESTING_HPP___
 
->>
