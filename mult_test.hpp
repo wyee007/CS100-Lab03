@@ -4,6 +4,7 @@
 #include "gtest/gtest.h"
 #include "mult.hpp"
 #include "op.hpp"
+#include "base.hpp"
 
 TEST(MultTest, MultTestWTwoNonZero){
 	Op* five = new Op(5);
@@ -31,4 +32,5 @@ TEST(MultTest, MultDoubleTest){
 	Mult* testTwo = new Mult(testOne, ten);
 	EXPECT_EQ(testTwo->stringify(), 300);
 }
+
 #endif //__MULT_TEST_HPP__
