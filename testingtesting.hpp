@@ -33,12 +33,6 @@ TEST(OPTEST2, Power){
 	Base* test = new Pow(eight, ten);
 	EXPECT_EQ(test->evaluate(), 1073741824);
 }
-TEST(OPTEST2, Power2){
-	Base* eight = new Op(8);
-	Base* one = new Op(1);
-	Base* test = new Pow(eight, one);
-	EXPECT_EQ(test->evaluate(), 1);
-}
 
 #endif //__TESTINGTESTING_HPP___
 
