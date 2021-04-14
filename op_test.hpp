@@ -12,7 +12,7 @@ TEST(OpTest, OpEvaluateNonZero) {
 
 TEST(OpTest, OpStringifyNonZero){
    Op* test = new Op(8);
-   EXPECT_EQ(test->stringify(), 8.000000);
+   EXPECT_EQ(test->stringify(), "8.000000");
 }
 TEST(OpTest, OpStringifyZero){
    Op* test = new Op(0);
@@ -20,6 +20,6 @@ TEST(OpTest, OpStringifyZero){
 }
 TEST(OpTest, OpStringifyNegative){
    Op* test = new Op(-1);
-   EXPECT_EQ(test->stringify(), -1);
+   EXPECT_EQ(test->stringify(), "-1");
 }
 #endif //__OP_TEST_HPP__
