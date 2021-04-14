@@ -20,6 +20,6 @@ TEST(OpTest, OpStringifyZero){
 }
 TEST(OpTest, OpStringifyNegative){
    Op* test = new Op(-1);
-   EXPECT_EQ(test->stringify(), -1);
+   EXPECT_EQ(test->stringify(), "-1");
 }
 #endif //__OP_TEST_HPP__

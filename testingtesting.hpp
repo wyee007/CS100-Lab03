@@ -39,4 +39,7 @@ TEST(OPTEST2, Power2){
 	Base* test = new Pow(eight, one);
 	EXPECT_EQ(test->evaluate(), 1);
 }
-#endif //__TESTINGTESTING_HPP__
+
+#endif //__TESTINGTESTING_HPP___
+
+>>

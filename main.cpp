@@ -4,6 +4,7 @@
 #include "add.hpp"
 #include "sub.hpp"
 #include "pow.hpp"
+#include "mult.hpp"
 
 int main() {
     // This is a very basic main, and being able to correctly execute this main
@@ -18,8 +19,8 @@ int main() {
     Base* minus = new Sub(add, two);
 
     std::cout << minus->stringify() << " = " << minus->evaluate() << std::endl;
-	Base* add= new Add(three,seven);
-	std::cout << add->stringify() << " = " << add->evaluate() << std::endl;
+	Base* add2= new Add(three,seven);
+	std::cout << add2->stringify() << " = " << add2->evaluate() << std::endl;
         Base* sub= new Sub(three,seven);
         std::cout << sub->stringify() << " = " << sub->evaluate() << std::endl;
         Base* pow= new Pow(three,seven);
