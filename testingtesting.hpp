@@ -27,3 +27,4 @@ TEST(OPTEST2, Power){
 	Base* test = new Pow(eight, ten);
 	EXPECT_EQ(test->evaluate(), 1073741824);
 }
+#endif //__TESTINGTESTING_HPP___
