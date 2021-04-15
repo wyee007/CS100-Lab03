@@ -22,7 +22,7 @@ TEST(MultTest, MultTestwOneZero){
 	Op* five = new Op(5);
 	Op* zero = new Op(0);
 	Mult* test = new Mult(five, zero);
-	EXPECT_EQ(test->stringify(), 0);
+	EXPECT_EQ(test->evaluate(), 0);
 }
 TEST(MultTest, MultDoubleTest){
 	Op* five = new Op(5);
@@ -30,7 +30,7 @@ TEST(MultTest, MultDoubleTest){
 	Op* ten = new Op(10);
 	Mult* testOne = new Mult(five, six);
 	Mult* testTwo = new Mult(testOne, ten);
-	EXPECT_EQ(testTwo->stringify(), 300);
+	EXPECT_EQ(testTwo->evaluate(), 300);
 }
 
 #endif //__MULT_TEST_HPP__
